@@ -23,4 +23,14 @@ function divide(a, b) {
   return toNumber(a) / denom;
 }
 
-module.exports = { add, subtract, multiply, divide };
+module.exports = {
+  add,
+  subtract,
+  multiply,
+  divide,
+  // Backwards-compatible names expected by some test suites:
+  addition: add,
+  subtraction: subtract,
+  multiplication: multiply,
+  division: divide,
+};
